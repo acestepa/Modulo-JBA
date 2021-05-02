@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        MODULO DE CONTROL DE MERCANCIA
+    </title>
+    <link rel="stylesheet" href="../estilos/estilos2.0.css">
+</head>
+
+<body background="../imagenes/fondo-web-gris-3-01n.jpg"></body>
+<header class="encabezado">
+    <nav>
+        <div class="logo">Modulo JBA</div>
+        <ul>
+            <li><a href="Principal.html">Inicio</a></li>
+
+            <li><a href="#">Menu principal</a>
+                <ul>
+                    <li><a href="#">Administracion></a>
+                        <ul>
+                            <Li><a href="Registrousuario.html">Gestion de Usuarios</a></li>
+                            <Li><a href="#">Verificar Existencias</a></li>
+                            <Li><a href="#">Generar reportes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Compras ></a>
+                        <ul>
+                            <Li><a href="Registrarproducto.html">Registro de Productos</a></li>
+                            <Li><a href="Generarpedido.html">Generar un Pedido</a></li>
+                            <Li><a href="Registroproveedor.html">Registro Proveedor</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ventas ></a>
+                        <ul>
+                            <Li><a href="Registrarcliente.html">Registro de Cliente</a></li>
+                            <Li><a href="JBA.html">Generar Salida</a></li>
+                            <Li><a href="#">Consultar existencias</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="iniciodesesion.html">Iniciar sesión</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="lateral">
+
+    <form class="formapro" name="formulario">
+        <h5>Datos Proveedor</h5>
+        <h3>
+            Nombre o Razon social:<br>
+            <input class="controls" type="name" pattern="[A-Za-z]" id="Nombre_pro" required> <br> Telefono:
+            <br>
+            <input class="controls" type="tel" pattern="[0-9]+" id="Telefono_pro" required> <br> Nit: <br>
+            <input class="controls" type="text" pattern="[0-9]+" id="Nit_pro" required> <br> Correo: <br>
+            <input class="controls" type="email" id="Correo_pro" required> <br>
+            <input class="buttons" type="submit" value="Registrar">
+            <input class="buttons" type="submit" value="Consultar Proveedor">
+            <div id="main" style="border: 1px solid rgb(252, 248, 248)"></div>
+        </h3>
+    </form>
+</div>
+<div id="lateral-1">
+    <h2>Consulta Proveedor</h2>
+    <form class="formacli" name="formularrio">
+        <h3>
+            Nombre o Razon social:<br>
+            <input type="name" placeholder="Nombre completo" pattern="[A-Za-z]" id="Nombre_pro"><br> Nit:
+            <br>
+            <input type="text" placeholder="Numero de documento" id="Nit_pro" pattern="[0-9]+"> <br>
+            <br>
+            <input type="submit" value="Buscar">
+            <input type="submit" value="Modificar">
+
+
+        </h3>
+    </form>
+</div>
+</body>
+
+</html>

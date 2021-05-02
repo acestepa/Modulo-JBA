@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        MODULO DE CONTROL DE MERCANCIA
+    </title>
+    <link rel="stylesheet" href="../estilos/estilos2.0.css">
+</head>
+
+<body background="../imagenes/fondo-web-gris-3-01n.jpg"></body>
+<header class="encabezado">
+    <nav>
+        <div class="logo">Modulo JBA</div>
+        <ul>
+            <li><a href="Principal.html">Inicio</a></li>
+
+            <li><a href="#">Menu principal</a>
+                <ul>
+                    <li><a href="#">Administracion></a>
+                        <ul>
+                            <Li><a href="Registrousuario.html">Gestion de Usuarios</a></li>
+                            <Li><a href="#">Verificar Existencias</a></li>
+                            <Li><a href="#">Generar reportes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Compras ></a>
+                        <ul>
+                            <Li><a href="Registrarproducto.html">Registro de Productos</a></li>
+                            <Li><a href="Generarpedido.html">Generar un Pedido</a></li>
+                            <Li><a href="Registroproveedor.html">Registro Proveedor</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ventas ></a>
+                        <ul>
+                            <Li><a href="Registrarcliente.html">Registro de Cliente</a></li>
+                            <Li><a href="JBA.html">Generar Salida</a></li>
+                            <Li><a href="#">Consultar existencias</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="iniciodesesion.html">Iniciar sesión</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="form-register">
+    <h5>Generar Salida</h5>
+    <h3>
+        Documento: <br>
+        <input class="controls" type="number" name="Cedula" id="id_cliente" placeholder="Cedula" required> <br> Factura: <br>
+        <input class="controls" type="text" name="Numero de Factura" id="Numero_Factura" placeholder="Numero de Factura" required> <br> Fecha: <br>
+        <input class="controls" type="date" name="Fecha de Factura" id="Fecha_Factura" placeholder="Fecha de Factura" required> <br> Producto a facturar: <br>
+        <input class="controls" type="text" name="Referencia de producto" id="Referencia_producto" placeholder="Referencia de producto" required> <br> Cantidad: <br>
+        <input class="controls" type="number" name="Cantidad de producto" id="Cantidad_producto" placeholder="Cantidad De producto" required>
+        <br>
+        <br>
+        <input class="buttons" type="submit" value="Generar Salida">
+        <input class="buttons" type="submit" value="Consultar Cliente">
+
+        <a href="Registrousuario.html"><input class="buttons" type="submit" value="Registar cliente"></a>
+
+        <p><a href="#">Terminos y Condiciones</a></p>
+        <div id="main" style="border: 1px solid rgb(252, 248, 248)"></div>
+    </h3>
+</section>
+</body>
+
+</html>

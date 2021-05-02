@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        MODULO DE CONTROL DE MERCANCIA
+    </title>
+    <link rel="stylesheet" href="../estilos/estilos2.0.css">
+</head>
+
+<body background="../imagenes/fondo-web-gris-3-01.jpg"></body>
+<header class="encabezado">
+    <nav>
+        <div class="logo">Modulo JBA</div>
+        <ul>
+            <li><a href="Principal.html">Inicio</a></li>
+
+            <li><a href="#">Menu principal</a>
+                <ul>
+                    <li><a href="#">Administracion></a>
+                        <ul>
+                            <Li><a href="Registrousuario.html">Gestion de Usuarios</a></li>
+                            <Li><a href="#">Verificar Existencias</a></li>
+                            <Li><a href="#">Generar reportes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Compras ></a>
+                        <ul>
+                            <Li><a href="Registrarproducto.html">Registro de Productos</a></li>
+                            <Li><a href="Generarpedido.html">Generar un Pedido</a></li>
+                            <Li><a href="Registroproveedor.html">Registro Proveedor</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ventas ></a>
+                        <ul>
+                            <Li><a href="Registrarcliente.html">Registro de Cliente</a></li>
+                            <Li><a href="JBA.html">Generar Salida</a></li>
+                            <Li><a href="#">Consultar existencias</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="iniciodesesion.html">Iniciar sesión</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="lateral1">
+
+    <form class="formacli" name="formularrio">
+        <h5>Registro cliente</h5>
+        <h3>
+            Nombre:<br>
+            <input class="controls" type="name" placeholder="Nombre completo" id="Nombre_cli"><br> C.C O NIT:
+            <br>
+            <input class="controls" type="text" placeholder="Numero de documento" id="Id_cli" required> <br> Direccion:
+            <br>
+            <input class="controls" type="text" id="Direccion_cli" placeholder="Ejemplo: Calle 79 # 7-45" required> <br> Ciudad: <br>
+            <input class="controls" type="text" id="Ciudad_cli" pattern="[A-Za-z]" placeholder="Ejemplo: Bogota" required> <br> Telefono: <br>
+            <input class="controls" type="text" maxlength="10" pattern="[0-9]+" id="Telefono_cli" required> <br>
+            <input class="buttons" type="submit" value="Agregar">
+            <a href="#"><input class="buttons" type="submit" value="Consultar cliente"></a>
+
+
+        </h3>
+    </form>
+</div>
+<div id="lateral1-1">
+    <h2>Consulta de Cliente</h2>
+    <form class="formacli" name="formularrio">
+        <h3>
+            Nombre:<br>
+            <input type="name" placeholder="Nombre completo" pattern="[A-Za-z]" id="Nombre_cli"><br> C.C O NIT:
+            <br>
+            <input type="text" placeholder="Numero de documento" id="Id_cli" pattern="[0-9]+"> <br>
+            <br>
+            <input type="submit" value="Buscar">
+
+        </h3>
+    </form>
+</div>
+</body>
+
+</html>
